@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+.page {
+	display: flex;
+	flex-wrap: flex;
+}
+
+.photo {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.photo img {
+	width: 100%;
+	padding: 20px;
+	padding-bottom: 50px;
+	display: flex;
+}
+
+.spacer {
+	position: absolute;
+	background-color: white;
+}
+
+#spacer-top {
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 50px;
+}
+
+#spacer-left {
+	top: 0;
+	left: 0;
+	height: 100vh;
+	padding-left: 50px;
+}
+
+#spacer-right {
+	top: 0;
+	right: 0;
+	height: 100vh;
+	padding-right: 50px;
+}
+
+article {
+	position: absolute;
+	top: 20vh;
+	left: 45%;
+	width: 45%;
+	height: auto;
+	font-family: 'Helvetica', sans-serif;
+	color: white;
+}
+
+article h1 {
+	font-size: 7vh;
+	font-weight: bold;
+	padding-bottom: 0.2em;
+}
+
+article h2 {
+	font-size: 4vh;
+	font-weight: bold;
+	padding-bottom: 0.1em;
+	padding-left: 0.5em;
+	text-indent: -0.5em;
+}
+
+article p {
+	font-size: 3vh;
+	font-weight: normal;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+article h1 a {
+	color: white;
+	text-decoration: none;
+	font-size: 0.6em;
+}
+
+article h1 a:hover,
+article h1 a:visited:hover {
+	text-decoration: underline;
+}
+
+
+@media screen and (max-aspect-ratio: 3/2) {
+
+	.photo img {
+		height: 100vh;
+		width: auto;
+	}
+	article {
+		top: 25vh;
+		left: 40%;
+		width: 45%;
+	}
+	article h1 {
+		font-size: 4.66vw;
+	}
+	article h2 {
+		font-size: 2.66vw;
+	}
+	article p {
+		font-size: 2vw;
+	}
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+
+	article {
+		top: 30vh;
+		left: 35%;
+		width: 45%;
+	}
+	article h1 {
+		font-size: 4.66vh;
+	}
+	article h2 {
+		font-size: 2.66vh;
+	}
+	article p {
+		font-size: 2vh;
+	}
+}
