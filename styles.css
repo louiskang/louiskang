@@ -6,120 +6,161 @@
 
 .page {
 	display: flex;
-	flex-wrap: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100vw;
+	min-width: 320px;
 }
 
 .photo {
 	display: flex;
+	align-items: center;
 	justify-content: center;
-	align-items: flex-end;
-	width: 100%;
-	height: 100vh;
 	overflow: hidden;
+	width: 100%;
+	height: 50vw;
+	max-width: 600px;
+	min-height: 160px;
+	max-height: 300px;
 }
 
-.photo img {
-	width: 100%;
-	padding: 20px;
-	padding-bottom: 50px;
+.photo picture {
 	display: flex;
-}
-
-.spacer {
-	position: absolute;
-	background-color: white;
-}
-
-#spacer-top {
-	top: 0;
-	left: 0;
+	justify-content: center;
 	width: 100%;
-	padding-top: 50px;
 }
 
-#spacer-left {
-	top: 0;
-	left: 0;
-	height: 100vh;
-	padding-left: 50px;
+.photo picture img {
+	justify-content: center;
+	width: 100%;
+	height: 100%;
 }
 
-#spacer-right {
-	top: 0;
-	right: 0;
-	height: 100vh;
-	padding-right: 50px;
+.article-spacer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-width: 320px;
+	max-width: 600px;
 }
 
 article {
-	position: absolute;
-	top: 20vh;
-	left: 45%;
-	width: 45%;
-	height: auto;
+	width: 80%;
 	font-family: 'Helvetica', sans-serif;
-	color: white;
+	color: black;
+	padding-bottom: 8vw;
 }
 
 article h1 {
-	font-size: 7vh;
+	font-size: calc(24px + 30%);
 	font-weight: bold;
+	padding-top: 0.5em;
 	padding-bottom: 0.2em;
 }
 
 article h2 {
-	font-size: 4vh;
+	font-size: calc(14px + 20%);
 	font-weight: bold;
-	padding-bottom: 0.1em;
 	padding-left: 0.5em;
 	text-indent: -0.5em;
+	padding-bottom: 0.1em;
+}
+
+article h3 {
+	font-size: (14px + 20%);
+	font-weight: bold;
+	padding-top: 0.5em;
 }
 
 article p {
-	font-size: 3vh;
+	font-size: (10px + 20%);
 	font-weight: normal;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
 
-article h1 a {
-	color: white;
+a {
+	color: black;
+}
+
+article h2 a {
 	text-decoration: none;
-	font-size: 0.6em;
 }
 
-article h1 a:hover,
-article h1 a:visited:hover {
-	text-decoration: underline;
+article h3 a:hover,
+article h3 a:visited:hover {
+	text-decoration: none;
 }
 
+@media only screen and (min-width: 541px) and (min-height: 421px) {
 
-@media screen and (max-aspect-ratio: 3/2) {
-
-	.photo img {
+	.photo {
+		max-width: none;
+		max-height: none;
 		height: 100vh;
-		width: auto;
 	}
+	.photo picture {
+		align-items: flex-end;
+		padding: 20px;
+		padding-bottom: 50px;
+		width: auto;
+		height: 100%;
+	}
+	.photo picture img {
+		width: auto;
+		height: 100%;
+	}
+
+	.article-spacer {
+		max-width: none;
+	}
+
+	.spacer {
+		position: absolute;
+		background-color: white;
+	}
+	#spacer-top {
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding-top: 50px;
+	}
+	#spacer-left {
+		top: 0;
+		left: 0;
+		height: 100vh;
+		padding-left: 50px;
+	}
+	#spacer-right {
+		top: 0;
+		right: 0;
+		height: 100vh;
+		padding-right: 50px;
+	}
+
 	article {
-		top: 25vh;
-		left: 40%;
-		width: 45%;
+		position: absolute;
+		color: white;
+		padding-bottom: 0;
 	}
 	article h1 {
-		font-size: 4.66vw;
+		padding-top: 0em;
 	}
 	article h2 {
-		font-size: 2.66vw;
 	}
-	article p {
-		font-size: 2vw;
+
+	a {
+		color: white;
 	}
+
 }
 
-@media screen and (max-aspect-ratio: 1/1) {
+@media only screen and (min-width: 541px) and (min-height: 421px) and (max-aspect-ratio: 1/1) {
 
 	article {
-		top: 30vh;
+		top: 20vh;
 		left: 35%;
 		width: 45%;
 	}
@@ -129,7 +170,60 @@ article h1 a:visited:hover {
 	article h2 {
 		font-size: 2.66vh;
 	}
-	article p {
-		font-size: 2vh;
+	article h3 {
+		font-size: 2.66vh;
 	}
+	article p {
+		font-size: calc(1.5vh + 0.8vw);
+	}
+
+}
+
+@media only screen and (min-width: 541px) and (min-height: 421px) and (min-aspect-ratio: 1/1) and (max-aspect-ratio: 3/2) {
+
+	article {
+		top: 20vh;
+		left: 42%;
+		width: 45%;
+	}
+	article h1 {
+		font-size: 4.66vw;
+	}
+	article h2 {
+		font-size: 2.66vw;
+	}
+	article h3 {
+		font-size: 2.33vw;
+	}
+	article p {
+		font-size: calc(0.6vw + 1.8vh);
+	}
+
+}
+
+@media only screen and (min-width: 541px) and (min-height: 421px) and (min-aspect-ratio: 3/2) {
+	
+	.photo picture img {
+		width: 100%;
+		height: auto;
+	}
+
+	article {
+		top: 18vh;
+		left: 42%;
+		width: 45%;
+	}
+	article h1 {
+		font-size: calc(6.5vh + 0.1vw);
+	}
+	article h2 {
+		font-size: calc(3.5vh + 0.1vw);
+	}
+	article h3 {
+		font-size: calc(3.0vh + 0.1vw);
+	}
+	article p {
+		font-size: calc(0.6vw + 1.8vh);
+	}
+
 }

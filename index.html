@@ -5,6 +5,7 @@
 		<title>Louis Kang, MD, PhD</title>
 		<link rel='stylesheet' href='styles.css'/>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class='page'>
@@ -13,17 +14,24 @@
 			<div id='spacer-right'  class='spacer'></div>
 			<div class='photo'>
 				<picture>
-					<img src="background.jpg">
+					<source media='(min-width:  541px) and
+												 (min-height: 421px)' 
+          				srcset='background-small.jpg 1x,
+               						background.jpg 2x'/>
+					<img src='background-mobile.jpg'/>
 				</picture>
 			</div>
-			<article>
-				<h1>Louis Kang <a href='Louis-Kang-CV.pdf'>[CV]</a></h1>
-				<h2>Miller Fellow</h2>
-				<h2>Department of Physics</h2>
-				<h2>Helen Wills Neuroscience Institute</h2>
-				<h2>UC Berkeley</h2>
-				<p>Human cognition ultimately emerges from sophisticated computations performed by networks of neurons. I use and develop tools from theoretical physics and applied mathematics to investigate how our brains make sense of and respond to our dynamic environments. Theoretical neuroscience forms one part of my overall mission to better understand human biology and pathology through quantitative analysis.</p>
-			</article>
+			<div class='article-spacer'>
+				<article>
+					<h1>Louis Kang</h1>
+					<h2><a href='http://miller.berkeley.edu/'>Miller Fellow</a></h2>
+					<h2><a href='http://physics.berkeley.edu/'>Department of Physics</a></h2>
+					<h2><a href='http://neuroscience.berkeley.edu/'>Helen Wills Neuroscience Institute</a></h2>
+					<h2><a href='http://www.berkeley.edu/'>UC Berkeley</a></h2>
+					<p>Human cognition ultimately emerges from sophisticated computations performed by networks of neurons. I use and develop tools from theoretical physics and applied mathematics to investigate how our brains make sense of and respond to our dynamic environments. Theoretical neuroscience forms one part of my overall mission to better understand human biology and pathology through quantitative analysis.</p>
+					<h3><a href='Louis-Kang-CV.pdf'>CV</a></h3>
+				</article>
+			</div>
 		</div>
 	</body>
 </html>
