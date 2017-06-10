@@ -85,7 +85,8 @@ a {
 	color: black;
 }
 
-article h2 a {
+article h2 a,
+article p a {
 	text-decoration: none;
 }
 
@@ -164,8 +165,8 @@ article h3 a:visited:hover {
 		width: 50%;
 	}
 	article h1 {
-		font-size: calc(2.8vh + 2.8vw);
-		content: 'viewport-units-buggyfill;	font-size: calc(2.8vh + 2.8vw);'
+		font-size: calc(2.6vh + 2.6vw);
+		content: 'viewport-units-buggyfill;	font-size: calc(2.6vh + 2.6vw);'
 	}
 	article h2,
 	article h3 {
@@ -173,8 +174,8 @@ article h3 a:visited:hover {
 		content: 'viewport-units-buggyfill;	font-size: calc(1.6vh + 1.6vw);'
 	}
 	article p {
-		font-size: calc(1.3vh + 1.3vw);
-		content: 'viewport-units-buggyfill;	font-size: calc(1.3vh + 1.3vw);'
+		font-size: calc(1.2vh + 1.3vw);
+		content: 'viewport-units-buggyfill;	font-size: calc(1.2vh + 1.3vw);'
 	}
 
 }
@@ -187,18 +188,18 @@ article h3 a:visited:hover {
 	}
 
 	article h1 {
-		font-size: calc(2.6vh + 2.2vw);
-		content: 'viewport-units-buggyfill;	font-size: calc(2.6vh + 2.2vw);'
+		font-size: calc(2.5vh + 2.1vw);
+		content: 'viewport-units-buggyfill;	font-size: calc(2.5vh + 2.1vw);'
 	}
 	article h2,
 	article h3 {
-		font-size: calc(1.8vh + 1.3vw);
-		content: 'viewport-units-buggyfill;	font-size: calc(1.8vh + 1.3vw);'
+		font-size: calc(1.7vh + 1.2vw);
+		content: 'viewport-units-buggyfill;	font-size: calc(1.7vh + 1.2vw);'
 	}
 	article p {
-		font-size: calc(1.5vh + 1.0vw);
+		font-size: calc(1.4vh + 1.0vw);
 
-		content: 'viewport-units-buggyfill;	font-size: calc(1.5vh + 1.0vw);'
+		content: 'viewport-units-buggyfill;	font-size: calc(1.4vh + 1.0vw);'
 	}
 
 }
@@ -219,8 +220,8 @@ article h3 a:visited:hover {
 		width: 40%;
 	}
 	article h1 {
-		font-size: calc(6.5vh + 0.1vw);
-		content: 'viewport-units-buggyfill;	font-size: calc(6.5vh + 0.1vw);'
+		font-size: calc(6.0vh + 0.1vw);
+		content: 'viewport-units-buggyfill;	font-size: calc(6.0vh + 0.1vw);'
 	}
 	article h2,
 	article h3 {
@@ -228,8 +229,8 @@ article h3 a:visited:hover {
 		content: 'viewport-units-buggyfill;	font-size: calc(3.5vh + 0.1vw);'
 	}
 	article p {
-		font-size: calc(2.0vh + 0.6vw);
-		content: 'viewport-units-buggyfill;	font-size: calc(2.0vh + 0.6vw);'
+		font-size: calc(1.9vh + 0.6vw);
+		content: 'viewport-units-buggyfill;	font-size: calc(1.9vh + 0.6vw);'
 	}
 
 }
