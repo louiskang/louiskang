@@ -37,7 +37,7 @@
 	height: 100%;
 }
 
-.article-spacer {
+.article-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -50,7 +50,7 @@ article {
 	width: 80%;
 	font-family: 'Helvetica', sans-serif;
 	color: black;
-	padding-bottom: 8vw;
+	padding-bottom: 40px;
 }
 
 article h1 {
@@ -114,9 +114,10 @@ article h3 a:visited:hover {
 		height: 100%;
 	}
 
-	.article-spacer {
+	.article-container {
+		position: absolute;
 		max-width: none;
-		padding: 50px;
+		top: 15%;
 	}
 
 	.spacer {
@@ -143,10 +144,8 @@ article h3 a:visited:hover {
 	}
 
 	article {
+		width: auto;
 		padding-bottom: 0px;
-		position: absolute;
-		color: black;
-		top: 15%;
 	}
 	article h1 {
 		padding-top: 0em;
@@ -160,7 +159,7 @@ article h3 a:visited:hover {
 
 @media only screen and (min-width: 541px) and (max-aspect-ratio: 1/1) {
 
-	article {
+	.article-container {
 		left: 35%;
 		width: 50%;
 	}
@@ -182,7 +181,7 @@ article h3 a:visited:hover {
 
 @media only screen and (min-width: 541px) and (min-aspect-ratio: 1/1) and (max-aspect-ratio: 3/2) {
 
-	article {
+	.article-container {
 		left: 40%;
 		width: 45%;
 	}
@@ -215,7 +214,7 @@ article h3 a:visited:hover {
 		height: auto;
 	}
 
-	article {
+	.article-container {
 		left: 45%;
 		width: 40%;
 	}
