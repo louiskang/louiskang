@@ -2,4 +2,4 @@
 COMMENT=${1:-Update}
 git add --all
 git commit -m "$COMMENT"
-echo git push -u origin master
+git push -u origin master
