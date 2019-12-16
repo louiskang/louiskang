@@ -116,6 +116,7 @@ section h1 {
 
 .figure img {
   width: 75%;
+  height: auto;
   max-width: 300px;
 }
 
