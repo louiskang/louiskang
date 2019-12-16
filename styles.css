@@ -106,16 +106,14 @@ section h1 {
 }
 
 .figure {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
   width: 95%;
-  margin: auto;
+  text-align: center;
   padding-bottom: 1.5rem;
 }
 
 .figure img {
   width: 75%;
-  height: auto;
   max-width: 300px;
 }
 
@@ -191,16 +189,18 @@ section h1 {
     padding: 4rem 0rem;
   }
 
-  .figure {
-    justify-content: space-between;
-  }
-
   .figure img {
     max-width: none;
+    margin-left: 0%;
+    margin-right: 4%;
+  }
+  .figure img:last-of-type {
+    max-width: none;
+    margin-right: 0%;
   }
 
   #grid1 {
-    display: flex;
+    display: inline-block;
     width: calc(95% * 255/395);
   }
 
@@ -213,7 +213,7 @@ section h1 {
   }
 
   #rafts2 {
-    display: flex;
+    display: inline-block;
     width: calc(95% * 265/395);
   }
 	
