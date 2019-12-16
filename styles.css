@@ -64,16 +64,16 @@ main {
   padding-bottom: 4rem;
 }
 
-.about h1 {
+.about h2 {
   font-weight: 400;
   font-size: 1.2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.2rem;
 }
 
-.about h2 {
+.about h3 {
   font-weight: 300;
   font-size: 1.2rem;
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.8rem;
 }
 
 .research-container {
@@ -95,7 +95,7 @@ section:last-of-type {
 	padding-bottom: 2em;
 }
 
-section h1 {
+section h2 {
   font-weight: 600;
   font-size: 1rem;
   padding-bottom: 1rem;
