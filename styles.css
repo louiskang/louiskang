@@ -80,7 +80,7 @@ main {
   font-size: 1.2rem;
   text-align: center;
   background-color: #DDDDDD;
-  padding: 3rem 1rem;
+  padding: 4rem 1rem;
 }
 
 main {
@@ -222,6 +222,10 @@ section h2 {
 
   html {
     font-size: 22px;
+  }
+
+  .research-container {
+    padding: 3rem 1rem;
   }
 
 }
