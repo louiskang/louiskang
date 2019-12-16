@@ -1,39 +1,90 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 	<head>
 		<meta charset='UTF-8'/>
 		<title>Louis Kang, MD, PhD</title>
 		<link rel='stylesheet' href='styles.css'/>
-		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
-		<meta name='description' content='I am a Miller Fellow at UC Berkeley working at the intersection between theoretical physics and medicine.'>
-		<script src='viewport-units-buggyfill.js'></script>
-		<script>window.viewportUnitsBuggyfill.init();</script>
+    <link rel="stylesheet" href="https://use.typekit.net/mum1wxq.css">
+		<meta name='viewport' content='width=device-width,
+          initial-scale=1.0, maximum-scale=1.0'/>
+		<meta name='description' content='I am a computational neuroscientist at UC Berkeley who studies how memories are stored by networks of neurons in our brains.'>
 	</head>
+
 	<body>
-		<div class='page'>
-			<div id='spacer-top'    class='spacer'></div>
-			<div id='spacer-left'   class='spacer'></div>
-			<div id='spacer-right'  class='spacer'></div>
-			<div class='photo'>
-				<picture>
-					<source media='(min-width:  541px) and
-												 (min-height: 421px)' 
-          				srcset='background-small.jpg 1x,
-               						background.jpg 2x'/>
-					<img src='background-banner.jpg'/>
-				</picture>
-			</div>
-			<div class='article-container'>
-				<article>
-					<h1>Louis Kang</h1>
-					<h2><a href='https://miller.berkeley.edu/'>Miller Fellow</a></h2>
-					<h2><a href='http://physics.berkeley.edu/'>Department of Physics</a></h2>
-					<h2><a href='https://neuroscience.berkeley.edu/'>Helen Wills Neuroscience Institute</a></h2>
-					<h2><a href='https://www.berkeley.edu/'>UC Berkeley</a></h2>
-					<p>Human cognition ultimately emerges from sophisticated computations performed by networks of neurons. At the <a href='https://redwood.berkeley.edu/'>Redwood Center for Theoretical Neuroscience</a> with <a href='http://deweeselab.berkeley.edu/'>Mike DeWeese</a>, I use and develop tools from theoretical physics to investigate how our brains make sense of and respond to our dynamic environments. Theoretical neuroscience forms one part of my overall mission to better understand human biology and pathology through quantitative analysis.</p>
-					<h3><a href='Louis-Kang-CV.pdf'>CV</a><a href='https://scholar.google.com/citations?user=vBL1OAIAAAAJ'>Google Scholar</a></h3>
-				</article>
-			</div>
-		</div>
+
+    <header>
+      <div class='photo'>
+        <picture>
+          <source media='(min-width: 1000px)' 
+                  srcset='photo-1x.jpg 2x,
+                          photo-1x.jpg 1x'/>
+          <img src='photo-small.jpg'/>
+        </picture>
+      </div>
+      <div class=name>
+        <h1>Louis Kang</h1>
+        <h2>Computational neuroscientist</h2>
+      </div>
+    </header>
+
+    <div class='about'>
+      <h1>I am a <a href='http://miller.berkeley.edu/'>Miller Fellow</a> at the University of California, Berkeley. I work at the <a href='https://redwood.berkeley.edu/'>Redwood Center for Theoretical Neuroscience</a> with <a href='https://redwood.berkeley.edu/people/mike-deweese/'>Mike DeWeese</a>.</h1>
+      <h2>Email me at louis.kang@berkeley.edu</h1>
+      <h2>[<a href='Louis_Kang_CV.pdf'>Download my CV</a>]</h1>
+    </div>
+
+    <div class='research-container'>
+      <div class='research'>
+        When an experience in our daily life gets stored as a memory, something must change in our brain&mdash;what is it? I study how neural circuits in the hippocampal region form memories of events and associate them with where they occurred. To do so, I use computer simulations and quantitative tools from theoretical physics. I aim to uncover how these circuits are disrupted in neurological diseases such as dementia and epilepsy.
+      </div>
+    </div>
+
+    <main>
+      <section>
+        <h1>I am currently investigating grid cells through the theoretical framework of attractor networks.</h1>
+        <div class='description'>
+          The entorhinal cortex (EC) contains grid cells, each of which only fires when we approach certain locations that form a triangular lattice in space. There is mounting evidence that the grid cell network can be modeled as a continuous attractor, in which neural activity evolves through a set of attractor states that represent different positions in the 2D environment. However, existing attractor models did not capture several key phenomena exhibited by the grid system. Through simulations, I demonstrated how these phenomena arise in continuous attractors with the addition of experimentally observed or biologically plausible features of EC.
+        </div>
+        <div class='figure'>
+          <img src='grid1.jpg' id='grid1' class='additional'/>
+          <img src='grid2.gif' id='grid2'/>
+        </div>
+        <table class='references'>
+          <tr>
+            <th>[<a href='https://elifesciences.org/articles/46351'>Web</a>]</th>
+            <th>[<a href='kang2019replay.pdf'>PDF</a>]</th>
+            <td>Kang L &amp; DeWeese MR. Replay as wavefronts and theta sequences as bump oscillations in a grid cell attractor network. <i>eLife</i> 8, e46351 (2019).</td>
+          </tr>
+          <tr>
+            <th>[<a href='https://elifesciences.org/articles/46687'>Web</a>]</th>
+            <th>[<a href='kang2019modules.pdf'>PDF</a>]</th>
+            <td>Kang L &amp; Balasubramanian V. A geometric attractor mechanism for self-organization of entorhinal grid modules. <i>eLife</i> 8, e46687 (2019).</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h1>My background in theoretical physics and clinical medicine has equipped me with unique interdisciplinary skills.</h1>
+        <div class='description'>
+          My interest in uncovering the quantitative principles that underlie biomedical problems led me to an MD/PhD program at the University of Pennsylvania. My PhD thesis was advised by Tom Lubensky in the Department of Physics. I studied liquid crystals, which are rod-shaped molecules or particles that prefer to align with one another, like uncooked spaghetti. Under certain conditions, they self-assemble into a 2D membrane containing "rafts" of one type of liquid crystal within a background of another type. This system is analogous to biological membranes with lipid rafts, whose mechanisms of formation are not known. Using the theory of continuum mechanics, I showed that rafts can arise from the propensity of liquid crystals to form twisted structures with a particular chirality, or handedness.
+        </div>
+        <div class='figure'>
+          <img src='rafts1.jpg' id='rafts1'/>
+          <img src='rafts2.jpg' id='rafts2' class='additional'/>
+        </div>
+        <table class='references'>
+          <tr>
+            <th>[<a href='https://www.pnas.org/content/114/1/E19'>Web</a>]</th>
+            <th>[<a href='kang2017rafts.pdf'>PDF</a>]</th>
+            <td>Kang L &amp; Lubensky TC. Chiral twist drives raft formation and organization in membranes composed of rod-like particles. <i> PNAS</i> 114, E19 (2017).</td>
+          </tr>
+          <tr>
+            <th>[<a href='https://pubs.rsc.org/en/content/articlelanding/2016/SM/C5SM02038G'>Web</a>]</th>
+            <th>[<a href='kang2016membranes.pdf'>PDF</a>]</th>
+            <td>Kang L, Gibaud T, Dogic Z &amp; Lubensky TC. Entropic forces stabilize diverse emergent structures in colloidal membranes. <i>Soft Matter</i> 12, 386 (2016).</td>
+          </tr>
+        </table>
+      </section>
+    </main>
 	</body>
 </html>
