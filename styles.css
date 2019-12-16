@@ -239,14 +239,10 @@ section h1 {
   
   .name h1 {
     font-size: 84px;
-    text-align: right;
-    padding-bottom: 1rem;
   }
   
   .name h2 {
     font-size: 48px;
-    text-align: right;
-    word-spacing: 1400px;
   }
 	
 }
