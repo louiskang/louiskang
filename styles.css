@@ -7,6 +7,9 @@
 html {
   font-size: 18px;
   padding: env(safe-area-inset);
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 a {
@@ -78,7 +81,7 @@ main {
 .research-container {
   font-size: 1.0rem;
   text-align: center;
-  background-color: #DDDDDD;
+  background-color: #E0E0E0;
   padding: 4rem 1rem;
 }
 
