@@ -82,7 +82,7 @@ main {
   font-size: 1.0rem;
   text-align: center;
   background-color: #E0E0E0;
-  padding: 4rem 1rem;
+  padding: 4rem 0rem;
 }
 
 main {
@@ -161,8 +161,10 @@ section h2 {
     font-size: 1.2rem;
   }
 
-  .research-container {
+  .research {
     font-size: 1.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
 }
@@ -240,7 +242,8 @@ section h2 {
   }
 
   .research-container {
-    padding: 3rem 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
 }
