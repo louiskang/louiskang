@@ -87,6 +87,10 @@ main {
 .research h3 {
   font-weight: 400;
   font-size: 1.0rem;
+  margin-bottom: 1rem;
+}
+.research h3:last-of-type {
+  margin-bottom: 0rem;
 }
 
 main {
@@ -167,8 +171,8 @@ section h3 {
 
   .research h3 {
     font-size: 1.2rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
   }
 
 }
